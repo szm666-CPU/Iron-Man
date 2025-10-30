@@ -4,41 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-        body{
-            display: flex ;
-            justify-content: center ;
-            align-items: center ;
-            height: 100vh ;
-        }
-        p{
-            cursor: pointer;
-        }
-        div{
-            background-color: cadetblue ;
-            padding: 10px ;
-            border-radius: 5px ;
-            transition: all 0.3s ease ;
-        }
-        div:hover{
-            transform: translateY(-3px);
-        }
-    </style>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <div>
       <p>仅为测试区域</p>
     </div>
-    <script>
-      const p = document.querySelector("p");
-      p.addEventListener("click", () => {
-        p.textContent = "测试区域被点击";
-        p.style.color = "red";
-        setTimeout(() => {
-            p.textContent = "仅为测试区域";
-            p.style.color = "black";
-        }, 2000)
-      });
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
